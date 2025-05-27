@@ -1,0 +1,1 @@
+functiontool decorator hamary function ko Functiontool class ka instance bna deta hai

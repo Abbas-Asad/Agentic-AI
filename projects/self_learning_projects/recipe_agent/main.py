@@ -31,6 +31,7 @@ Cuisine: [Type] | Prep: [Time] | Cook: [Time] | Serves: [X] persons
 - [Storage tip]
 
 Keep responses under 300 words. Never use sub-headers in ingredients. List EVERYTHING under main Ingredients section.
+(reply in urdu if user wants)
 """
 
 # 🎯 Create Product Detail Assistant Agent
