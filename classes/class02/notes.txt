@@ -1,0 +1,2 @@
+LLM is not descriminator
+(Example: 10 diff answers of a single question each time)

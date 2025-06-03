@@ -7,12 +7,6 @@ from agents.run import RunConfig
 load_dotenv(find_dotenv())
 gemini_api_key = os.getenv("GEMINI_API_KEY")
 
-if not gemini_api_key:
-    raise ValueError(
-        "GEMINI_API_KEY environment variable is not set. "
-        "Please set it in your .env file or environment variables."
-    )
-
 # Setup client 
 external_client = AsyncOpenAI(
     api_key=gemini_api_key,
@@ -21,7 +15,7 @@ external_client = AsyncOpenAI(
 
 # Preferred model setup
 model = OpenAIChatCompletionsModel(
-    model="gemini-2.0-flash",
+    model="google/gemma-3n-e4b-it:free",
     openai_client=external_client
 )
 

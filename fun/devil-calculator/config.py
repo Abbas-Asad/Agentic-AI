@@ -5,12 +5,12 @@ from agents.run import RunConfig
 
 # Load environment variables
 load_dotenv(find_dotenv())
-gemini_api_key = os.getenv("GEMINI_API_KEY")
+gemini_api_key = os.getenv("OPENROUTER_API_KEY")
 
-# Setup OpenRouter client 
+# Setup client 
 external_client = AsyncOpenAI(
     api_key=gemini_api_key,
-    base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
+    base_url="https://openrouter.ai/api/v1",
 )
 
 # Preferred model setup
