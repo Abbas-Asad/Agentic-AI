@@ -62,7 +62,7 @@ async def handle_chat_start():
     cl.user_session.set("history", [])
     await cl.Message(
         content=(
-            "**Professional Product Analysis Assistant 🛍️**\n\n"
+            "**Product Analysis Assistant 🛍️**\n\n"
             "I'm here to help you explore and compare e-commerce products with ease. You can:\n"
             "- Provide a product API URL to fetch details (name, price, availability, ratings)\n"
             "- Describe a product to search for online using DuckDuckGo\n\n"

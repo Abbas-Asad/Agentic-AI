@@ -15,7 +15,7 @@ external_client = AsyncOpenAI(
 
 # Preferred model setup
 model = OpenAIChatCompletionsModel(
-    model="google/gemma-3n-e4b-it:free",
+    model="gemini-2.0-flash",
     openai_client=external_client
 )
 

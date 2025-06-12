@@ -33,8 +33,8 @@ print(result.final_output)
 
 
 # instructions type =   Callable[[RunContextWrapper[TContext], Agent[TContext]],MaybeAwaitable[str],]
-# docs =                """The instructions for the agent. Will be used as the "system prompt" when this agent is
-# invoked. Describes what the agent should do, and how it responds.
+# docs =                """The instructions for the agent. Will be used as the "system prompt" when this 
+# agent is invoked. Describes what the agent should do, and how it responds.
 
 # Can either be a string, or a function that dynamically generates instructions for the agent. If
 # you provide a function, it will be called with the context and the agent instance. It must
