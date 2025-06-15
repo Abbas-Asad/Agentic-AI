@@ -1,0 +1,21 @@
+FunctionTool(name='fetch_weather_data', description="This is responsible for fetching weather's data.\ncity: This is the parameter whose data will be fetched.", params_json_schema={'properties': {'city': {'title': 'City', 'type': 'string'}}, 'required': ['city'], 'title': 'fetch_weather_data_args', 'type': 'object', 'additionalProperties': False}, on_invoke_tool=<function function_tool.<locals>._create_function_tool.<locals>._on_invoke_tool at 0x0000024AB6A6C360>, strict_json_schema=True, is_enabled=True)
+
+FunctionTool(name='fetch_weather_data', description="This is responsible for fetching weather's data.\ncity: This is the parameter whose data will be fetched.", params_json_schema={'properties': {'city': {'title': 'City', 'type': 'string'}, 'country': {'default': 'Pakistan', 'title': 'Country', 'type': 'string'}}, 'required': ['city', 'country'], 'title': 'fetch_weather_data_args', 'type': 'object', 'additionalProperties': False}, on_invoke_tool=<function function_tool.<locals>._create_function_tool.<locals>._on_invoke_tool at 0x0000023702F8C400>, strict_json_schema=True, is_enabled=True)
+
+
+Planning:
+Agent -> tools -> 
+# - reset_tool_choice   ->   tool ki fresh choice ka mechanism ✅
+# - tool_use_behavior   ->   ToolsToFinalOutputFunction   ->   (Ye yani function kay through baqi 3 pr full control) ✅ (lekin it takes txt)
+# - tools
+
+
+Remaining: ToolsToFinalOutputFunction & default_tool_error_function ✅ & Complete analysis of tool.py
+
+
+Inho nay exception say inherit kia hoga jabhi repr Value error say representation aagyi
+
+openai_chatcompletions.py
+chatcmpl_converter.py
+
+    -->    Inhi dono say enable verbose ka structure bn rha hai

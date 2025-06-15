@@ -1,0 +1,211 @@
+Tracing is disabled. Not creating trace Agent workflow
+Setting current trace: no-op
+Parent None or <agents.tracing.traces.NoOpTrace object at 0x000001749C712D50> is no-op, returning NoOpSpan
+Running agent Assistant (turn 1)
+Tracing is disabled. Not creating span <agents.tracing.span_data.GenerationSpanData object at 0x000001749C73AF90>
+[
+  {
+    "content": "You are a helpful assistant.",
+    "role": "system"
+  },
+  {
+    "role": "user",
+    "content": "What is the weather in newyork?"
+  }
+]
+Tools:
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "calculator",
+      "description": "A calculator tool that performs basic arithmetic operations between two numbers.\n\nThis tool can perform four basic arithmetic operations: addition, subtraction, multiplication, and division.\nIt takes two numbers and an operation type as input and returns the result of the calculation.",
+      "parameters": {
+        "properties": {
+          "operation": {
+            "description": "The arithmetic operation to perform. Must be one of: \"add\", \"subtract\", \"multiply\", \"divide\"",
+            "title": "Operation",
+            "type": "string"
+          },
+          "a": {
+            "description": "The first number in the calculation",
+            "title": "A",
+            "type": "number"
+          },
+          "b": {
+            "description": "The second number in the calculation",
+            "title": "B",
+            "type": "number"
+          }
+        },
+        "required": [
+          "operation",
+          "a",
+          "b"
+        ],
+        "title": "calculator_args",
+        "type": "object",
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "weather_checker",
+      "description": "A weather information tool that provides current weather conditions for major cities.\n\nThis tool returns simulated weather data for predefined cities. It provides temperature\nand weather condition information in a human-readable format.",
+      "parameters": {
+        "properties": {
+          "city": {
+            "description": "The name of the city to check weather for. Currently supports:\n- New York\n- London\n- Tokyo\n- Paris",
+            "title": "City",
+            "type": "string"
+          }
+        },
+        "required": [
+          "city"
+        ],
+        "title": "weather_checker_args",
+        "type": "object",
+        "additionalProperties": false
+      }
+    }
+  }
+]
+Stream: False
+Tool choice: NOT_GIVEN
+Response format: NOT_GIVEN
+
+LLM resp:
+{
+  "content": null,
+  "refusal": null,
+  "role": "assistant",
+  "annotations": null,
+  "audio": null,
+  "function_call": null,
+  "tool_calls": [
+    {
+      "id": "",
+      "function": {
+        "arguments": "{\"city\":\"New York\"}",
+        "name": "weather_checker"
+      },
+      "type": "function"
+    }
+  ]
+}
+
+Parent <agents.tracing.spans.NoOpSpan object at 0x000001749B149A50> or <agents.tracing.traces.NoOpTrace object at 0x000001749C712D50> is no-op, returning NoOpSpan
+Invoking tool weather_checker with input {"city":"New York"}
+Tool call args: ['New York'], kwargs: {}
+Tool weather_checker returned Sunny, 25°C
+Running agent Assistant (turn 2)
+Tracing is disabled. Not creating span <agents.tracing.span_data.GenerationSpanData object at 0x000001749CB6AC30>
+[
+  {
+    "content": "You are a helpful assistant.",
+    "role": "system"
+  },
+  {
+    "role": "user",
+    "content": "What is the weather in newyork?"
+  },
+  {
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "id": "",
+        "type": "function",
+        "function": {
+          "name": "weather_checker",
+          "arguments": "{\"city\":\"New York\"}"
+        }
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "",
+    "content": "Sunny, 25\u00b0C"
+  }
+]
+Tools:
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "calculator",
+      "description": "A calculator tool that performs basic arithmetic operations between two numbers.\n\nThis tool can perform four basic arithmetic operations: addition, subtraction, multiplication, and division.\nIt takes two numbers and an operation type as input and returns the result of the calculation.",
+      "parameters": {
+        "properties": {
+          "operation": {
+            "description": "The arithmetic operation to perform. Must be one of: \"add\", \"subtract\", \"multiply\", \"divide\"",
+            "title": "Operation",
+            "type": "string"
+          },
+          "a": {
+            "description": "The first number in the calculation",
+            "title": "A",
+            "type": "number"
+          },
+          "b": {
+            "description": "The second number in the calculation",
+            "title": "B",
+            "type": "number"
+          }
+        },
+        "required": [
+          "operation",
+          "a",
+          "b"
+        ],
+        "title": "calculator_args",
+        "type": "object",
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "weather_checker",
+      "description": "A weather information tool that provides current weather conditions for major cities.\n\nThis tool returns simulated weather data for predefined cities. It provides temperature\nand weather condition information in a human-readable format.",
+      "parameters": {
+        "properties": {
+          "city": {
+            "description": "The name of the city to check weather for. Currently supports:\n- New York\n- London\n- Tokyo\n- Paris",
+            "title": "City",
+            "type": "string"
+          }
+        },
+        "required": [
+          "city"
+        ],
+        "title": "weather_checker_args",
+        "type": "object",
+        "additionalProperties": false
+      }
+    }
+  }
+]
+Stream: False
+Tool choice: NOT_GIVEN
+Response format: NOT_GIVEN
+
+LLM resp:
+{
+  "content": "The weather in New York is Sunny, 25\u00b0C.",
+  "refusal": null,
+  "role": "assistant",
+  "annotations": null,
+  "audio": null,
+  "function_call": null,
+  "tool_calls": null
+}
+
+Resetting current trace
+=============================
+The weather in New York is Sunny, 25°C.
+Shutting down trace provider
+Shutting down trace processor <agents.tracing.processors.BatchTraceProcessor object at 0x000001749AFECEC0>
