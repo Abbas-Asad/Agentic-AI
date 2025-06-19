@@ -1,0 +1,118 @@
+=========================================ONLY MAIN NOTES=====================================
+    # Handoff may koi args nhi hotay to is liye args ka schema bnana us ki handling wghera inho nay wo sab yha nhi kia lekin tool call may kia hai, Isi trha isay (handoff) call krty waqt raise error bhi nhi hoga kyukay ye agent hai function nhi, Isi trha handoff may input history (previous history) us ki filteration ko manage krna
+    # To tool calling function may hoti hai aur handoff tool calling agent may hoti hai (To in 2no kay farq ko yaad rkhnay say kaafi cheezain clear rhegi aur kha inho nay kya kyu nh kia wo bhi smjh may aajaye ga)
+
+    # (_on_invoke_tool_impl): Tool kay andar args, kwargs daal kr pura chla kr us ko check krna (ya ghlat json structure pr error dena) aur us ka result laana aur us kay updates log may show krny ka kaam ye kr rha hai      # 5 imp kaam
+    # Main yehi puray tool execution ko handle kr rha hai
+
+=========================================IT END HERE=========================================
+
+🎯 Real-World Analogy:
+Socho tum aik kitchen robot bana rahe ho jo:
+Pehle knife uthata hai (tool).
+Chop karta hai (tool used).
+Phir same knife uske haath mein hi rehta hai har next task ke liye — jab tak tum uska haath change na karo.
+🔁 Is se woh infinite chop karte rahega — unless tum bolo:
+“Har task ke baad haath khali karo” → that’s reset_tool_choice = True.
+
+
+🔧 Practical Use:
+agent = Agent(reset_tool_choice=True)
+Iska matlab:
+Jab bhi koi tool use hota hai, next step mein agent planning se decide karega:
+“Kya mujhe phir se tool use karna hai?”
+“Ya LLM se kuch output dena hai?”
+“Ya aur koi tool use karna hai?”
+
+reset_tool_choice=False → Tool state persists
+reset_tool_choice=True → Tool state resets per turn
+
+# - reset_tool_choice   →   tool ki fresh choice ka mechanism
+
+===========================================================Analogy============================================================
+
+🔄 Infinite Loop Kis Surat Mein Banega?
+Jab 3 conditions milti hain:
+1 - reset_tool_choice=False ho
+(Tool select hone ke baad reset na ho)
+2 - Agent planner ya LLM har step pe "same tool use karo" decide karta ho
+3 - Tool ke output se user question ka answer nahi milta
+(e.g., galat ya incomplete data ho)
+
+
+
+
+-------------------------4 MAIN ROLES OF OpenAI's chat-based system:-------------------------
+
+1.system    # system prompt
+2.user      # user prompt
+3.assistant # LLM ya model response role (model ka jawab)
+4.tool      # external tool/function ka response
+
+[
+  {
+    "role": "system",
+    "content": "You are a helpful assistant."
+  },
+  {
+    "role": "user",
+    "content": "Convert 5 kilometers to meters"
+  },
+  {
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "name": "unit_converter",
+          "arguments": "{\"to_unit\":\"m\",\"value\":5,\"from_unit\":\"km\"}"
+        }
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "",
+    "content": "5000.0 m"
+  },
+  {
+    "role": "assistant",
+    "content": "5 kilometers is equal to 5000 meters."
+  }
+]
+
+
+
+========================================SOME POINTS========================================
+agent loop se bahar ki cheezain jaisy agent ka direct response jo LLM nay nhi dekha
+
+Jb agent kay paas say LLM kay pas kuch jany lge tb turn shuru hogi aur jb LLM kay pas say Agent kay paas wapas kuch aaye tb turn khatam hogi
+
+Inho nay exception say inherit kia hoga jabhi repr Value error say representation aagyi
+
+1. openai_chatcompletions.py
+2. chatcmpl_converter.py
+-->    Inhi dono say enable verbose say jo structure dekhtay hain wo bn rha hai
+
+guardrail hamsha pehli baar chlega "turn 1"
+temerpature 0.0 se 1.0 (randomness or fix answer)
+
+_run_impl (ye runner ko dekhtay waqt dekhu ga)
+
+def ensure_strict_json_schema() for handoff toolcalling
+strict_mode= True for normal tool calling
+
+Q1: 2 OVERLOADS KYU
+
+tool is_enabled ki complete details
+
+sab kuch total list form but LLM response is only in dict form
+
+---------------------------------------------------------------------------------------------------------------------------
+SDK function tool setup strategy
+
+Q. Agent autonomous kaise hua, Tool (functions) ko to ye line chla rhi hai "FunctionTool=(on_invoke_tool=run_function)" yani tool kay call honay pr?
+A. Agent ko tools diye gaye hain ab wo sab kuch khud se smjhe ga kay konsa tool kab kesay aur konsay parameters ay sath chalana hai (wesay parameters LLM batayega phir lekin phir paas krky ye hi chlayega)
+
+on_invoke_tool=function
+on_invoke_tool, which is an async function that receives the context and the arguments as a JSON string, and must return the tool output as a string.
+

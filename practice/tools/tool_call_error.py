@@ -8,7 +8,7 @@ def custom_failure_message(
 ) -> str:
     return f"Custom error message: {str(error)}\nRepr: {repr(error)}, Type: {type(error)}, Args: {error.args}"
 
-@function_tool(failure_error_function=custom_failure_message,)
+@function_tool(failure_error_function=None,)
 # def buggy_calculator(a: float, b: float) -> float:
 #     """Deliberately buggy calculator that divides by zero if b is 0"""
 #     # return a / b  # ⚠️ Will raise ZeroDivisionError if b == 0

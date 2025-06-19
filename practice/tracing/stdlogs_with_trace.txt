@@ -1,0 +1,165 @@
+Here are complete log of a workflow with Handoff and Tool-calling (tracing enabled)
+It's trace dashboard link: (https://platform.openai.com/traces/trace?trace_id=trace_1b814e6a0e5448178c9b4ea8e631a835)
+
+C:/Users/Lenovo/Desktop/OpenAI_Agents_SDK/practice/tracing/main.py uv run main.py
+
+Creating trace Agent workflow with id trace_1b814e6a0e5448178c9b4ea8e631a835
+Setting current trace: trace_1b814e6a0e5448178c9b4ea8e631a835
+Creating span <agents.tracing.span_data.AgentSpanData object at 0x0000026BCE8A5450> with id None
+Running agent Main Agent (turn 1)
+Creating span <agents.tracing.span_data.ResponseSpanData object at 0x0000026BCE533BD0> with id None
+Calling LLM gpt-4o with input:
+[
+  {
+    "content": "What is 7 times 6? Also, I need advanced help with recursion in programming but in two lines.",
+    "role": "user"
+  }
+]
+Tools:
+[
+  {
+    "name": "multiply",
+    "parameters": {
+      "properties": {
+        "a": {
+          "title": "A",
+          "type": "integer"
+        },
+        "b": {
+          "title": "B",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "a",
+        "b"
+      ],
+      "title": "multiply_args",
+      "type": "object",
+      "additionalProperties": false
+    },
+    "strict": true,
+    "type": "function",
+    "description": "Multiply two numbers."
+  },
+  {
+    "name": "specialist_handoff",
+    "parameters": {
+      "additionalProperties": false,
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "strict": true,
+    "type": "function",
+    "description": "Use this tool to hand off advanced or specialized queries to the Specialist Agent."
+  }
+]
+Stream: False
+Tool choice: NOT_GIVEN
+Response format: NOT_GIVEN
+Previous response id: None
+
+LLM resp:
+[
+  {
+    "arguments": "{\"a\":7,\"b\":6}",
+    "call_id": "call_NAlg2EjFlGktTNHD7CeMoPFR",
+    "name": "multiply",
+    "type": "function_call",
+    "id": "fc_68530cbabb40819ba985366eb371d0130b6e119bca214d8a",
+    "status": "completed"
+  },
+  {
+    "arguments": "{}",
+    "call_id": "call_eDhysYBVJu3Ij618r0I0kEAh",
+    "name": "specialist_handoff",
+    "type": "function_call",
+    "id": "fc_68530cbae19c819b8ad6b8dcc1c064020b6e119bca214d8a",
+    "status": "completed"
+  }
+]
+
+Creating span <agents.tracing.span_data.FunctionSpanData object at 0x0000026BCEDF3D90> with id None
+Invoking tool multiply with input {"a":7,"b":6}
+Tool call args: [7, 6], kwargs: {}
+Tool multiply returned 42
+Creating span <agents.tracing.span_data.HandoffSpanData object at 0x0000026BCEDEE850> with id None
+[TRACE] Handoff event triggered!
+Creating span <agents.tracing.span_data.AgentSpanData object at 0x0000026BCEDF3CA0> with id None
+Running agent Specialist Agent (turn 2)
+Creating span <agents.tracing.span_data.ResponseSpanData object at 0x0000026BCEDC3F90> with id None
+Calling LLM gpt-4o with input:
+[
+  {
+    "content": "What is 7 times 6? Also, I need advanced help with recursion in programming but in two lines.",
+    "role": "user"
+  },
+  {
+    "arguments": "{\"a\":7,\"b\":6}",
+    "call_id": "call_NAlg2EjFlGktTNHD7CeMoPFR",
+    "name": "multiply",
+    "type": "function_call",
+    "id": "fc_68530cbabb40819ba985366eb371d0130b6e119bca214d8a",
+    "status": "completed"
+  },
+  {
+    "arguments": "{}",
+    "call_id": "call_eDhysYBVJu3Ij618r0I0kEAh",
+    "name": "specialist_handoff",
+    "type": "function_call",
+    "id": "fc_68530cbae19c819b8ad6b8dcc1c064020b6e119bca214d8a",
+    "status": "completed"
+  },
+  {
+    "call_id": "call_NAlg2EjFlGktTNHD7CeMoPFR",
+    "output": "42",
+    "type": "function_call_output"
+  },
+  {
+    "call_id": "call_eDhysYBVJu3Ij618r0I0kEAh",
+    "output": "{\"assistant\": \"Specialist Agent\"}",
+    "type": "function_call_output"
+  }
+]
+Tools:
+[]
+Stream: False
+Tool choice: NOT_GIVEN
+Response format: NOT_GIVEN
+Previous response id: None
+
+Exported 5 items
+LLM resp:
+[
+  {
+    "id": "msg_68530cbc1760819b82a18cc31dd78fc00b6e119bca214d8a",
+    "content": [
+      {
+        "annotations": [],
+        "text": "7 times 6 is 42.\n\nFor recursion in programming, here's a two-line example of a recursive function in Python to calculate factorial:\n\n```python\ndef factorial(n): return 1 if n == 0 else n * factorial(n-1)\n```\n\nThis function calculates the factorial of a number using recursion.",
+        "type": "output_text",
+        "logprobs": null
+      }
+    ],
+    "role": "assistant",
+    "status": "completed",
+    "type": "message"
+  }
+]
+
+Resetting current trace
+
+Final Output:
+ 7 times 6 is 42.
+
+For recursion in programming, here's a two-line example of a recursive function in Python to calculate factorial:
+
+```python
+def factorial(n): return 1 if n == 0 else n * factorial(n-1)
+```
+
+This function calculates the factorial of a number using recursion.
+Shutting down trace provider
+Shutting down trace processor <agents.tracing.processors.BatchTraceProcessor object at 0x0000026BCD11C6E0>
+Exported 2 items

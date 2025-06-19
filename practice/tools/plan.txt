@@ -12,10 +12,5 @@ Agent -> tools ->
 
 Remaining: ToolsToFinalOutputFunction & default_tool_error_function ✅ & Complete analysis of tool.py
 
-
-Inho nay exception say inherit kia hoga jabhi repr Value error say representation aagyi
-
-openai_chatcompletions.py
-chatcmpl_converter.py
-
-    -->    Inhi dono say enable verbose ka structure bn rha hai
+C:\Users\Lenovo\Desktop\OpenAI_Agents_SDK\practice\tools\.venv\Lib\site-packages\agents\model_settings.py
+(Farigh ho kr is ko detail may dekhna LLM ki agent kay liye sari settings jaise tool_choice, temperature etc)
