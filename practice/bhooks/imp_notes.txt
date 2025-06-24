@@ -1,0 +1,13 @@
+AgentHooks VS RunHooks
+
+-----------Scope----------
+AgentHooks sirf kisi khaas agent pr lgty hain aur usay hum har agent may alag alag hooks= property main paas krty hain
+Jb kay RunHooks sirf Runner.run kay andar hooks= may paas krny say har har agent pr lg jata hai 
+
+---------Use Case---------
+Agar 3 agents hain kisi aik pr hook chalany hain to AgentHooks use hoga 
+Agar 3no agents pr hook chalany hain to RunHooks use hoga (Jab aap chahte hain ke poore agent system ke lifecycle events par custom code chale, chahe agent koi bhi ho.)
+
+-----------Default---------
+RunHooks nhi hain to OpenAI SDK khud instance bna detay hain 
+Lekin AgentHooks bnanay hi prty hain

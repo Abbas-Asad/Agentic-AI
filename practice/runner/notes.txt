@@ -1,0 +1,29 @@
+to hum direct code may handoff(agent) say bhi Handoff ka insance bna skte hain
+?output_schema.name smjh nhi aaya
+current_span agent span bna rha hai
+NoOpSpan aik dummy span hai jo errors se bchany kay liye bnaya hai
+?current_span.span_data.tools = [t.name for t in all_tools] (agent_span bnaty huay de skty thay phir ye kyu kia)
+?agent.get_system_prompt() may callableinstructions str may kesay convert ho rhy hain  -  solved.function ka return la rhy hain jo kay aik str hai
+?generated_item in Runner
+new_response basically model ka pura pura response return kr rha hai (tokens, response type(class))
+?context_wrapper.usage.add(new_response.usage) (line 951)
+
+
+3 pydantic
+2 markdown
+5 prompt eng last 2 video of quiz preparation
+40 sdk
+chat completion 285 line
+
+
+
+
+AgentOutputSchema(
+    output_type=<class '__main__.CalendarEvent'>, 
+    _type_adapter=TypeAdapter(OutputType), 
+    _is_wrapped=True, 
+    _output_schema={'$defs': {'CalendarEvent': {'properties': {'name': {'title': 'Name', 'type': 'string'}, 'date': {'title': 'Date', 'type': 'string'}, 'participants': {'items': {'type': 'string'}, 'title': 'Participants', 'type': 'array'}, 'location_room': {'title': 'Location Room', 'type': 'integer'}}, 'required': ['name', 'date', 'participants', 'location_room'], 'title': 'CalendarEvent', 'type': 'object', 'additionalProperties': False}}, 'properties': {'response': {'$ref': '#/$defs/CalendarEvent'}}, 'required': ['response'], 'title': 'OutputType', 'type': 'object', 'additionalProperties': False}, _strict_json_schema=True
+    )
+
+new_response:  ModelResponse(output=[ResponseFunctionToolCall(arguments='{}', call_id='', name='transfer_to_math_expert', type='function_call', id='__fake_id__', status=None)], usage=Usage(requests=1, input_tokens=81, input_tokens_details=InputTokensDetails(cached_tokens=0), output_tokens=7, output_tokens_details=OutputTokensDetails(reasoning_tokens=0), total_tokens=88), response_id=None)
+Parent <agents.tracing.spans.NoOpSpan object at 0x000001B50098E310> or <agents.tracing.traces.NoOpTrace object at 0x000001B5025FF610> is no-op, returning NoOpSpan
