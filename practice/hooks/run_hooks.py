@@ -1,4 +1,4 @@
-from agents import Agent, Runner, RunHooks, RunContextWrapper, function_tool
+from agents import Agent, Runner, RunHooks, RunContextWrapper, Tool, function_tool
 from config import config
 from rich import print
 from typing import Any
@@ -39,10 +39,10 @@ class CustomRunHooks(RunHooks):
     async def on_handoff(self, context: RunContextWrapper[Any], from_agent: Agent[Any], to_agent: Agent[Any]):
         print(f"[bold yellow]on_handoff[/bold yellow]: from_agent.name={from_agent.name}, to_agent.name={to_agent.name}")
 
-    async def on_tool_start(self, context: RunContextWrapper[Any], agent: Agent[Any], tool):
+    async def on_tool_start(self, context: RunContextWrapper[Any], agent: Agent[Any], tool: Tool):
         print(f"[bold blue]on_tool_start[/bold blue]: agent.name={agent.name}, tool.name={tool.name}")
 
-    async def on_tool_end(self, context: RunContextWrapper[Any], agent: Agent[Any], tool, result: str):
+    async def on_tool_end(self, context: RunContextWrapper[Any], agent: Agent[Any], tool: Tool, result: str):
         print(f"[bold blue]on_tool_end[/bold blue]: agent.name={agent.name}, tool.name={tool.name}, result={result}")
 
 # Agent5 (last in chain)

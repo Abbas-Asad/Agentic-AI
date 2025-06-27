@@ -9,5 +9,11 @@ Agar 3 agents hain kisi aik pr hook chalany hain to AgentHooks use hoga
 Agar 3no agents pr hook chalany hain to RunHooks use hoga (Jab aap chahte hain ke poore agent system ke lifecycle events par custom code chale, chahe agent koi bhi ho.)
 
 -----------Default---------
-RunHooks nhi hain to OpenAI SDK khud instance bna detay hain 
+RunHooks nhi (None) hain to OpenAI SDK khud instance bna detay hain 
 Lekin AgentHooks bnanay hi prty hain
+
+
+Problem: 3rd and 4th param here -> AgentHooks (on_handoff) should be vice versa
+Correction of the Problem: RunImpl 719 param correction (first agent will be always current agent whose hooks are running)
+
+(NOTE: Is folder may ye notes aur dono hooks ki images sab se important hain)

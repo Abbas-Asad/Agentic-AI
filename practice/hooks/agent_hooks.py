@@ -1,4 +1,4 @@
-from agents import Agent, Runner, AgentHooks, RunContextWrapper, enable_verbose_stdout_logging, function_tool
+from agents import Agent, Runner, AgentHooks, RunContextWrapper, Tool, function_tool, enable_verbose_stdout_logging
 from config import config
 from rich import print
 from typing import Any
@@ -21,10 +21,10 @@ class CustomAgentHooks(AgentHooks):
     async def on_handoff(self, context: RunContextWrapper[Any], agent: Agent[Any], source: Agent[Any]):
         print(f"[bold yellow]on_handoff[/bold yellow]: Agent '{agent.name}' received handoff from '{source.name}'")
 
-    async def on_tool_start(self, context: RunContextWrapper[Any], agent: Agent[Any], tool):
+    async def on_tool_start(self, context: RunContextWrapper[Any], agent: Agent[Any], tool: Tool):
         print(f"[bold blue]on_tool_start[/bold blue]: Agent '{agent.name}' is starting tool '{tool.name}'")
 
-    async def on_tool_end(self, context: RunContextWrapper[Any], agent: Agent[Any], tool, result: str):
+    async def on_tool_end(self, context: RunContextWrapper[Any], agent: Agent[Any], tool: Tool, result: str):
         print(f"[bold blue]on_tool_end[/bold blue]: Agent '{agent.name}' finished tool '{tool.name}' with result: {result}")
 
 physics_agent = Agent(
