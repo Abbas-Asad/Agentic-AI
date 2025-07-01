@@ -4,13 +4,12 @@ from pydantic import BaseModel
 from rich import print
 import nest_asyncio
 
-from agents import output_guardrail, GuardrailFunctionOutput, OutputGuardrailTripwireTriggered, TResponseInputItem
+from agents import output_guardrail, GuardrailFunctionOutput, OutputGuardrailTripwireTriggered
 nest_asyncio.apply()
 
 class PoliticsDiscussionOutput(BaseModel):
     is_politics_related: bool
     reason: str
-    answer: str
 
 guardrail_agent = Agent(
     name="Guardrail check", 
@@ -20,11 +19,11 @@ guardrail_agent = Agent(
 
 @output_guardrail
 def politics_guardrail(
-    ctx: RunContextWrapper[None], agent: Agent[None], input: str | list[TResponseInputItem]
-) -> GuardrailFunctionOutput:
+    ctx: RunContextWrapper[None], agent: Agent[None], output: str
+) -> GuardrailFunctionOutput:       # we get the LLM response/output in 3rd parameter
     result = Runner.run_sync(guardrail_agent, input, context=ctx.context, run_config=config)
     print("\nresult.final_output:" ,result.final_output , "\n")   # just to confirm if tripwire_triggered
-
+    
     return GuardrailFunctionOutput(
         output_info=result.final_output,
         tripwire_triggered=result.final_output.is_politics_related
@@ -36,9 +35,9 @@ agent = Agent(
     output_guardrails=[politics_guardrail]
 )
 
-# input = "Who is the founder of Algebra?"                                  # tripwire_triggered=False
+input = "Who is the founder of Algebra?"                                  # tripwire_triggered=False
 # input = "Why do some politicians spread misinformation?"                    # tripwire_triggered=True
-input = "Why is political corruption so common in some countries?"          # tripwire_triggered=True
+# input = "Why is political corruption so common in some countries?"          # tripwire_triggered=True
 
 
 try:

@@ -21,7 +21,7 @@ guardrail_agent = Agent(
 @input_guardrail
 def except_math_guardrail(
     ctx: RunContextWrapper[None], agent: Agent[None], input: str | list[TResponseInputItem]
-) -> GuardrailFunctionOutput:
+) -> GuardrailFunctionOutput:       # we get the USER input/query in 3rd parameter
     result = Runner.run_sync(guardrail_agent, input, context=ctx.context, run_config=config)
     print("\nresult.final_output:" ,result.final_output , "\n")   # just to confirm if tripwire_triggered
 
@@ -37,9 +37,9 @@ math_agent = Agent(
     input_guardrails=[except_math_guardrail]
 )
 
-# input = "What is the diff bw denominator and numerator?"          # maths question # False
+input = "What is the diff bw denominator and numerator?"          # maths question # False
 # input = "What is the diff bw verb and adverb?"                    # english question # True
-input = "What is the diff bw eletron and neutron?"                # science question # True
+# input = "What is the diff bw eletron and neutron?"                # science question # True
 
 try:
     result = Runner.run_sync(math_agent, input, run_config=config)
