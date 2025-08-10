@@ -1,0 +1,47 @@
+yani asan lafzon may top p answers ko limit krta hai aur temperature un may say koi aik pick krta hai aur jo jitna top pr ho usay pick krnay ky chances utnay hi zyada hotay hain lekin agar limit ain 1 hi answer ho aur temperature kitna bhi ho to answer 1 hi aayega
+
+top_p = 0.3 ka matlab yeh nahi ke sirf 3 answers,
+balki jitne answers mil kar 30% probability cover karte hain, woh pool mein aayenge.
+
+
+Kya 1 hi jawab 10 style mein aa sakta hai?
+Nahi!
+Jab top_p bohat kam hai, model ke paas har word ke liye sirf ek ya do options hote hain.
+Is liye, jawab bhi hamesha ek hi style, ek hi wording, ek hi structure mein aayega.
+Randomness (temperature) ka asar tabhi hota hai jab pool mein options ho.
+
+Aam Fikr: “10 style mein ek hi jawab”
+Model ke liye “style” bhi ek option hai, lekin jab pool chhota ho, to style bhi fix ho jata hai.
+Agar pool bara ho (top_p high), to model creative ho sakta hai, style badal sakta hai.
+Agar pool chhota ho (top_p low), to model ke paas style change karne ka bhi option nahi hota.
+
+
+Asal Matlab:
+frequency_penalty ek weight hai, jo har dafa ek lafz repeat hone par uski probability ko kam kar deta hai.
+Jitni zyada penalty, utni zyada discourage karega repeat ko.
+Yeh koi hard limit nahi lagata ke 2.0 par sirf 2 dafa repeat ho sakta hai, ya 3.0 par 3 dafa.
+Kaise Kaam Karta Hai?
+Jab model next word choose karta hai, agar koi lafz pehle aa chuka hai, to uski probability ko penalty se multiply ya subtract kar deta hai.
+Jitni zyada penalty, utna zyada chance ke model us lafz ko dobara na pick kare.
+
+movie dekhnay pr papa ka marna penalty  (exact example)
+
+
+Summary:
+Parallel: Sab tools ek sath call (faster, independent tools)
+Sequential: Tools ek ek karke call (slower, dependencies possible)
+
+acha parallel tool calls se may ye smjha hu kay agar alag alag tools call krny hain user query kay jawab mein
+example 6 tools 
+To un sabko aik sath call krega agar parallel_tool_calls true hai wrna aik aik krke call krega
+yaani jitne bhi tools aik workflow may call krny hain sab ko aik hi sath call krna (parallel_tool_calls=true)
+
+
+summary ka matlab yeh hai:
+parallel_tool_calls=True:
+Jab user ki query ka jawab dene ke liye multiple tools ki zarurat ho (jaise aapke example me 6 tools), to agent sab tools ko ek sath (parallel) call karega. Is se response tez aata hai aur sab tools ka result ek hi workflow me mil jata hai.
+parallel_tool_calls=False:
+Agent tools ko ek ek karke (sequentially) call karega. Pehle ek tool chalega, phir doosra, phir teesra... is tarah. Is se response slow ho sakta hai, lekin kuch scenarios me yeh zaruri bhi ho sakta hai (agar tools ki dependency ho).
+Summary:
+Parallel: Sab tools ek sath call (faster, independent tools)
+Sequential: Tools ek ek karke call (slower, dependencies possible)

@@ -1,0 +1,11 @@
+[project]
+name = "openai-agents-experiments"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "agentsdk-gemini-adapter>=0.1.0",
+    "openai-agents==0.0.16",
+    "rich>=14.1.0",
+]

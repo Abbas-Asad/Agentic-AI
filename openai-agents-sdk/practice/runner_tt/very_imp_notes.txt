@@ -42,4 +42,13 @@ class SingleStepResult:
     next_step: NextStepHandoff | NextStepFinalOutput | NextStepRunAgain
     """The next step to take."""
 
-- SingleStepResult may humay 5 cheezain milti hain model_response may humay is step ka result milta hai 
+- SingleStepResult may humay 5 cheezain milti hain model_response may humay is step ka result milta hai
+
+- OpenAI SDK may agar koi bhi error ho to uski khabar 3 jga milti hai
+    1. enable_verbose_stdout_logging kay logs
+    2. Tracing
+    3. Runtime error (code crashing by raise)
+
+
+- Runner may yeh bhi hain:
+    streaming, tracing, configuration

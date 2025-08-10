@@ -1,0 +1,23 @@
+version = 1
+revision = 1
+requires-python = ">=3.13"
+
+[[package]]
+name = "agentsdk-gemini-adapter"
+version = "0.1.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/64/7b/f9b7e9c9079fb64f4dc1ea56717b1baeefbedffc334c57aca1c1980d0692/agentsdk_gemini_adapter-0.1.0.tar.gz", hash = "sha256:7269dcef449f87b035c971ba61c3effaff29ca2ddc6a610e75ef56713794bf3e", size = 3482 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/4f/0f/16bc6c92785234ea848792aa1668f46e3380382036419891dc91ef8eac77/agentsdk_gemini_adapter-0.1.0-py3-none-any.whl", hash = "sha256:7e6ff55c0e779570e0e62ff303d311e78180d4825f216464bbf724f0688302ab", size = 4164 },
+]
+
+[[package]]
+name = "runner"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "agentsdk-gemini-adapter" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "agentsdk-gemini-adapter", specifier = ">=0.1.0" }]
