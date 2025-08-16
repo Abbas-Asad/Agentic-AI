@@ -92,12 +92,5 @@ print("Result:", result.final_output)
 ## ✍️ About Me
 I’m **Abbas**, an Agentic AI developer, Contributor, Student and at the same time a teacher😀  
 
----
-
-2. Check `notes.md` files for concept explanations.
-3. Explore `examples/` for working code.
-4. Use the `resources/` folder for quick references.
-
----
 
 > 📌 **Note:** This is a learning repository. The content here evolves as I learn more about Agentic AI.
