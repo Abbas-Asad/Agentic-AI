@@ -1,6 +1,6 @@
 # Agentic AI with Abbas
 
-Welcome to my **personal learning vault** for everything related to **Agentic AI**.  
+Welcome to my **personal learning** for everything related to **Agentic AI**.  
 This repository is where I document my journey, experiments, resources, and notes — a mix of **code vlogging**, tutorials, and practice projects.  
 If you're also exploring Agentic AI, this repo can serve as a structured reference.
 
