@@ -100,7 +100,7 @@ print("Result:", result.final_output)
 ---
 
 ### About Me
-I’m **[Abbas](https://www.linkedin.com/in/agentic-ai-developer/)**, an developer, contributor, student and at the same time a teacher.  
+I’m **[Abbas](https://www.linkedin.com/in/agentic-ai-developer/)**, a developer, contributor, student and at the same time a teacher.  
 
 
 
