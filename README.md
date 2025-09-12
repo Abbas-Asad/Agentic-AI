@@ -76,6 +76,11 @@ print("Result:", result.final_output)
 [AI Agents Startup Ideas in detail](https://github.com/panaversity/learn-agentic-ai/tree/main/-01_lets_get_started/03_from_llms_to_stateful_long_runningl_multi_agents)  
 <!-- [AI Agents Cheatsheet](https://media.datacamp.com/cms/ai-agents-cheat-sheet.pdf)   -->
 
+### Custom GPTs for OpenAI Agents SDK
+[Custom GPT #1](https://chatgpt.com/g/g-67ecc41ba33081919fe5428c87e78373-agents-sdk)  
+[Custom GPT #2](https://chatgpt.com/g/g-67d2c11e296c8191b18035f6319982e3-python-ai-agent-helper)  
+
+
 ### n8n (Workflow Automation)
   
 [n8n Official Documentation](https://docs.n8n.io/)  
