@@ -76,7 +76,7 @@ print("Result:", result.final_output)
 [AI Agents Startup Ideas in detail](https://github.com/panaversity/learn-agentic-ai/tree/main/-01_lets_get_started/03_from_llms_to_stateful_long_runningl_multi_agents)  
 <!-- [AI Agents Cheatsheet](https://media.datacamp.com/cms/ai-agents-cheat-sheet.pdf)   -->
 
-### Custom GPTs for OpenAI Agents SDK
+### Custom GPTs for OpenAI SDK
 [Custom GPT #1](https://chatgpt.com/g/g-67ecc41ba33081919fe5428c87e78373-agents-sdk)  
 [Custom GPT #2](https://chatgpt.com/g/g-67d2c11e296c8191b18035f6319982e3-python-ai-agent-helper)  
 
@@ -92,10 +92,21 @@ print("Result:", result.final_output)
 <!-- [How to Build AI Agents with n8n](https://n8n.io/blog/ai-agents-with-n8n)   -->
 
 
+### Prompt Engineering
+[Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)  
+[Free LLM Playgrounds to test Model Parameters](https://llm-explorer.com/static/blog/?id=free-llm-playgrounds)
+
+### Tech Stack
+[AI Agents Tech Stack](https://www.linkedin.com/posts/rakeshgohel01_ai-agents-are-about-90-software-engineering-activity-7353405600610881536-D36M?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE4LvzIBUre-SsOdMUHO2iov_O9bjpaz5eE) 
+
+### Cheatsheet
+[AI Agents Cheatsheet](https://media.datacamp.com/cms/ai-agents-cheat-sheet.pdf) 
+
+
 ### Add-ons 
 
-[AI Agents Ecosystem](https://www.linkedin.com/posts/rakeshgohel01_ai-agents-are-about-90-software-engineering-activity-7353405600610881536-D36M?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE4LvzIBUre-SsOdMUHO2iov_O9bjpaz5eE)  
-[Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)  
+<!-- [AI Agents Ecosystem](https://www.linkedin.com/posts/rakeshgohel01_ai-agents-are-about-90-software-engineering-activity-7353405600610881536-D36M?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE4LvzIBUre-SsOdMUHO2iov_O9bjpaz5eE)   -->
+<!-- [Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)   -->
 [Biggest Collection of ready made agents on Internet](https://github.com/Shubhamsaboo/awesome-llm-apps)  
 [Build Effective AI Agents](https://www.anthropic.com/engineering/building-effective-agents) 
  
