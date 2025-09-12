@@ -15,7 +15,7 @@ Model ke liye “style” bhi ek option hai, lekin jab pool chhota ho, to style 
 Agar pool bara ho (top_p high), to model creative ho sakta hai, style badal sakta hai.
 Agar pool chhota ho (top_p low), to model ke paas style change karne ka bhi option nahi hota.
 
-
+gpt4.
 Asal Matlab:
 frequency_penalty ek weight hai, jo har dafa ek lafz repeat hone par uski probability ko kam kar deta hai.
 Jitni zyada penalty, utni zyada discourage karega repeat ko.

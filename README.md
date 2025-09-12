@@ -89,11 +89,13 @@ print("Result:", result.final_output)
 
 ### Add-ons 
 
+[AI Agents Ecosystem](https://www.linkedin.com/posts/rakeshgohel01_ai-agents-are-about-90-software-engineering-activity-7353405600610881536-D36M?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE4LvzIBUre-SsOdMUHO2iov_O9bjpaz5eE)  
 [Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)  
 [Biggest Collection of ready made agents on Internet](https://github.com/Shubhamsaboo/awesome-llm-apps)  
-[AI Agents Ecosystem](https://www.linkedin.com/posts/rakeshgohel01_ai-agents-are-about-90-software-engineering-activity-7353405600610881536-D36M?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE4LvzIBUre-SsOdMUHO2iov_O9bjpaz5eE)  
 [Build Effective AI Agents](https://www.anthropic.com/engineering/building-effective-agents) 
  
+
+[Top 7 Typescript Frameworks for AI Agents](https://medium.com/@wahyuikbal/top-7-typescript-frameworks-for-ai-agents-08710bc7d5ff)  
 [The 12 Best AI Coding Assistants in 2025](https://www.datacamp.com/blog/best-ai-coding-assistants)  
 [The Best AI Agents in 2025: Tools, Frameworks, and Platforms Compared](https://www.datacamp.com/blog/best-ai-agents)  
 
