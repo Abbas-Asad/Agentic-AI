@@ -1,0 +1,25 @@
+markdown + pydantic 3 + prompt engineering 5                     (name none epty str)       (code dekh kr options read)       (experiment krna sab se zaroori hai)     (experiment + read options)    agar thoda buhat bhi openai sdk to pyndatic kay 3 qiestins asan  
+
+prompt enginering is an iterative process
+
+agents ki prompting seekh rhe hain
+
+chagpt 4.1 hune 2024
+fi ne tune ya info model tk phuchnag hoafi rag ya websearch
+
+https://www.youtube.com/live/slOSj3QA5FU?si=MpYYxmJ8g4AJI7ir&t=4765
+
+context wo data jis pr kaam kia jayega
+
+output_tokens users , query numbers , business idea andaza
+
+stopping points / guardrails
+
+prediction = probabilty (0 se 1 tk  -  in percent 1 to 100)
+
+gemini/softmax ky thorugh Sir Qasim      temp 0 par           80%
+
+lekin temperature highest (2 to 4on ki probabality equal hojayegi)
+
+non zero tokens jin ki probability zero nhi hai  
+3(temp topp topk)

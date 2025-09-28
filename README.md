@@ -100,7 +100,9 @@ print("Result:", result.final_output)
 [AI Agents Tech Stack](https://www.linkedin.com/posts/rakeshgohel01_ai-agents-are-about-90-software-engineering-activity-7353405600610881536-D36M?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE4LvzIBUre-SsOdMUHO2iov_O9bjpaz5eE) 
 
 ### Cheatsheet
+[LLM Usage Cheatsheet]()  
 [AI Agents Cheatsheet](https://media.datacamp.com/cms/ai-agents-cheat-sheet.pdf) 
+[MCP Cheatsheet]()  
 
 
 ### Add-ons 

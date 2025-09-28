@@ -1,0 +1,29 @@
+top k top k =10      few shot learning                    (system prompt  vs  context prompt)                  meta prompting and role prompting
+
+top k (I think k is proposition)
+
+system 2 thinking / Chain o T
+isi wja se reasoning capabilities 
+
+thinking may tokens buhat zyda jaaty hain
+
+CoT: Reasoning
+ToT: Explore multiple reasoning paths simultaneously
+
+Agent loop/Agentic workflow hota hi ReAct hai
+
+model ka bias hona (GAZA/israel ka baary may bias hai)
+biasness/hallucination aur toxicity se hmari jang hai  (in cheezon ka khatma kisi trha prompt engineering say)
+
+https://claude.ai/chat/7d80b406-9620-43bc-9653-c394e5104243 (system prompt vs role prompt)   (commands and instructions are system prompting while assigning role like "You are a" or "Act as" is role prompting)
+
+BELU ROGUE (generated output evaluation techniques)
+
+Use positive over negative  (Use instructions over constraints)   (constraints for safety/strict content)         (e.g. summarize in easy words | suitable for 5 grade candidate)
+
+Anthropic standard is xml
+1:10:51
+
+
+1 30 00 se exam
+error konsa aayega json ghalat hogai bilfarz
