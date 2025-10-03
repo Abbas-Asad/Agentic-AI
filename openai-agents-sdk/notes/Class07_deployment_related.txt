@@ -1,0 +1,58 @@
+colud native technology + agentic ai     (application bnanay kay liye humay inhe jorna hoga)
+
+dev time pr bhi hmare paas cloud native env hoga aur dep time pr bhi
+
+statless container best hai na kay virtual machine kyu kay vir-m scale nhi kregi
+
+cost bhi brhti jaegi aur scalability bhi kam hoti jaegi vir -m case may
+
+sara problem agents bnana nhi hai sara problem millions of users kay millions of agents chlana hai aur tb paisa bnega yehi saara msla hai, mern mean sab obselete ho chukay hain kyukay scalable nhi hain choti companies kay liye hain, isi liy humay cloud native aur ai ko merge krna hoga
+
+langgraph nextjs sab free hain lekin phir deployment may hum say paisa kamaty hain
+
+local computer say utha kr internet kay computer pr jisay kehtay hain cloud jo kay 24/7 chlta hai
+hmari machine jaisi cloud machine wo hai vir - m  monolitic system
+
+
+             2        tareekay
+
+1 super computer
+
+2 serverless             serverless dev ka sardard nhi
+
+hum khud se apna serverless bnana chahein to to kubernetes 
+is se pehlay humay oi bhi serverless cheez bnani hai to us ki bunyadi juz hai microservices aur usay bnanay kay liye jo cheez use ho wo hai docker
+
+container ko manage krne kay liye software kubernetes
+kubernets mushkil hai    to us say bchnay kay liye service dapr
+
+usi machine may data memory heavy loaded to database
+
+memory load kay liye hum dapr use krengy
+
+aisi cheez ho jo sab par chalti ho wrna bhatta
+
+3 cases
+
+
+planet scale laazmi
+
+scalable ka matlab
+
+api aur a2a communication
+
+ab api ki controlling agent khud kr skta hai jise hum kehtay hain tool calling
+
+api may structure hota hai yaha structure nhi hai national/natural language hai
+
+api say agent ki traf move to natural language ka faida na kay endpoints yaad rkhny hain
+wo khud smjh rha hai kis api ya endpoint ko call krna hai
+
+Sir shehzad wali baat kay 1000 2000 kay andar aap apny ghar ki tamam devices control kr skty hain
+
+choti devices aagy ja kr web server say mcp server bn jaey gi jis ko cloud jab chahy call krega
+
+function calling tool calling aana buhat zaroori hai (whatsapp message)
+
+smart home aur agent may difference
+https://www.youtube.com/live/iY3hkKfFZ_A?si=GpXJ_vVoAOjBpdNt&t=4476

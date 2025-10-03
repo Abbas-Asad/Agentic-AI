@@ -1,0 +1,11 @@
+Hosted tools class:
+
+Rag:
+LLM kay sath vector database connection  (RAG system)
+Agent kay sath connect krein to (Agentic RAG)
+Agentic RAG system OpenAI tools nay buhat easy krdia
+
+Playwright:
+"playwright" Python ka ek package hai jo browsers ko automate karke web testing aur JavaScript-based websites se data scraping mein use hota hai. (In short browser automation)
+In our case, it perform action and send screenshot to LLM for every next step
+Compter class kay andar sab click screenshot wgehra dekhy ja skty hain

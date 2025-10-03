@@ -1,0 +1,37 @@
+API vs Agent 2 farq           APIS structured hoti hain jb kay agent may natural language hoti hai
+workflow vs agents 
+
+natural language a2a comm
+
+traditional backend (workflow) vs agent
+Traditional backends, or workflows, execute tasks in a predefined, sequential manner, while agents are more dynamic and can adapt to changing situations
+
+web, cli, mobile apps
+
+client agent and remote agents
+agent.json agent card
+remote agent task perform kr ky client agent ko deta hai usay hum artifact kehtay hain
+
+https://www.youtube.com/live/Ojvp2ajsFDc?si=M5lZutG24m1ByORg&t=2164
+Proctocol: A standard pattern of communication
+Agent card: Agent ka metadata
+
+API Sepcification: Api kay docs wghera phir dekh kr use
+
+ab api ka card prhega na kay endpoints
+json rbc communication ka pattern
+
+JSON-RPC ek protocol hai jo do systems (client aur server) ke darmiyan communication ko standard banata hai — lekin wo JSON format mein hota hai.
+
+
+
+3 LAYER
+
+Bike ky sath aik sidecar amitabh ki film wohi concept hai
+
+sidecar dapr nay himaray lye saary kaam asan krdiye hain  microsrvice ko stateful bnana
+
+
+traditional backend (workflow) vs agent
+agent vs api
+https://www.youtube.com/live/Ojvp2ajsFDc?si=EhbLxpyPOFSehua0&t=3372

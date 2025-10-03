@@ -1,0 +1,19 @@
+Live streaming kay andar asyncronous ki buhat importance hai
+chunks may break kar server pr upload 3     3 seconds
+streaming client aur server kay between communication ka tariqa hai
+Agent loop may bhi streaming hi horhi hai
+delta data
+
+to apki streaming may se bech may say koi bhi data chahiye ho (UI Integration)  (Class 15 imp about integrating agent with UI (streaming concept))
+koi particular data lana ya phir ye kay database kay andar ye data retrive kr ky save krdo  (sb streaming say streaming buhat imp hai)
+A2A may bhi streaming hoti hai  
+Hybrid Interface par jo controlling hogi wo isi streaming ki badolat hogi
+Hybrid UI may jaisay aik aik krke cheezain hain wo bhi stream krke
+to streaming kay zariye aap ani hybrid UI bhi bna skty hain (options tab categories etc)
+To streaming sirf text pr na socho blke pure project pr streaming buhat kaam ani wali hai 
+
+, end="", flush=True (ye zaroori hai wrna har chunk nai line may hoga
+raw response event may sab kuch aarha hai jo chahiye usay hum nikal skty hain
+aagy streaming say hi AI Based UI control hogi
+
+""""""""""""""""""""""""" Artifact       aur              Canvas      2 interface jo cui may hum dekhtay hain"""""""""""""""""""""""""""""""""

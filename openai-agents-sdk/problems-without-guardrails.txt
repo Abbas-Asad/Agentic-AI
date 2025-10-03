@@ -1,0 +1,4 @@
+Problems without Guardrails
+1 - Workflow turns increase hojati
+2 - Instructions itnay detailed btany prty kay tokens buhat zyada waste hoty (big loss)
+3 - Parallel execution input aur output kay liye humay hi handle krni prti

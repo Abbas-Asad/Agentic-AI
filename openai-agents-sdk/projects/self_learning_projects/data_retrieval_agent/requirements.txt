@@ -1,5 +1,0 @@
-requests>=2.31.0
-chainlit>=2.5.5
-openai-agents>=0.0.16
-duckduckgo-search>=8.0.2
-typing-extensions>=4.9.0

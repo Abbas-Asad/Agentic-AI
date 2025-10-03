@@ -1,0 +1,44 @@
+llm nhi jaanta ya us pr train nhi hai
+
+ye jo file di hai ye context hai
+
+contex bhi sys user 
+
+context mtlb information extract retrieve kr ky llm ko paas krdy
+
+wo to stateless hai context to hr cheez jo hm pass krein
+
+user prompt kay andar hi context
+
+context say hi 5 types memory
+
+context management hai na memory management bhi hai
+
+memory management ki bunyadi cheezain
+
+context runner clas may hi pass hoga
+
+gpt wghera bhi context use kr rhy hogy open ai waly
+
+llm ko koi bhi external info dengay wo context hai
+
+local context ki class RunContextWrapper
+
+jo choti choti info nikal kr paas krni ho wo hum pass kr skty hain LLM ko local context main
+
+agent/llm context may kisi website sy nikal kr bhi information bheji ja skti hai
+aur direct object ki koi information nhi jaeyga
+
+tool message information
+
+context aik dafa puray agent loop may hoga (is trha ka kuch kha tha 2.2.0 kay baad)
+
+llm kay baad 2nd most important thing context managing
+local context ko use krty huay local context bna rhy hain
+
+AGENT KA LIFECYCLE HOOKS
+
+JO KUCH BHI HUM LLM KO DEN = LLM NY KHA MERI LIMIT HAI 1 MILLION TOKENS
+
+llm reasoning engine
+Class 15         2: 00: 35   say    2: 01: 58

@@ -1,0 +1,58 @@
+Agentic Prompt engineering
+
+LLM 2 cheezain deta hai kay ya to aap ka final output hai ya tool call kro
+
+non reasoning model vs reasoning model 
+
+GPT4.1 is the best LLM for AI Agents
+
+SWE bench verified (in ki pull request ko ye solve kr rha hai)  (55% problems solved)
+
+persistence  ::  jo bhi chezain workflow ma horhi hain usay yaad rkho   (persistence bs aik workflow kay liye hai us kay baad memory nhi rhegu)
+tool calling   ::   2 discount kay nam se
+Planning/COT   ::   Deep thinking/COT  HAR DATA KO VERIFY REASEARCH   (COT apke kam ke tareqay ko improve krti hai)
+
+direct call nhi blke plan aur phir affect on calling              --------        prevoius output ka kya impact prega
+LLM baaz dafa tool call hi nhi krta tha 
+Note1 : Tool calling krky hi answer dega apnay pas say koi hallucination nhi krega 
+(ex: If you are not sure about file content or codebase structure pertaining to the user’s request, use your tools to read files and gather the relevant information: do NOT guess or make up an answer.)
+
+tool calling kay liye general guideline deni hai
+agent loop pura context hai
+
+
+
+Note2: Jo cheez sath wala nhi smjh skta wo LLM bhi nhi smjh skta ye humay smjhna chahiye
+
+Note3: Few shot learning prompting kay liye yaha pr (# Examples) use krna hai examples may 4.1 model ky liye  (# aur yaha mlb markdown hai)
+
+Note4: GPT 4.1 ko reasoning powers dena chahty hu to aap (prompt engineering / chain of thoughts / few shot learning) ki badolat de skte ho usay likh ky btao
+to prompt engineering kro gy to ye reasoning ky kabil hojaeyga
+
+
+https://cookbook.openai.com/examples/gpt4-1_prompting_guide#prompt-structure  (yha pura prompt structure hai zabardast kism ka)
+
+
+LAST MAY UMMARY KAY TOR PAR KYU KAY CONTEXT ZYADA BRA HO TO SAB PR HAWI HOJAEYGA
+
+APNE HAR ANS PR SOCHA HAI REASONER
+
+AUTONOMOUS SDK SAY HAI LLM KAY PAAS YE POWER NHI WO BAS BTATA HAI HR STEP PR KRNA KYA HAI
+AGENT LOOP RESPONSIBLE KYA KRNA HAI KYA NHI
+
+REASONING ENGINE:
+FOUNDER OF PAKISTAN WALI MISAAL
+
+CHAIN OF THOUGHTS YANI STEPS MAIN TORNA AIK LINE ( STEP BY STEP ) YA PHIR EXAMPLES ZERO AND FEW SHOT
+
+dynamic prompt agent sdk may context say
+https://claude.ai/chat/065d2fa2-d456-4245-9640-29d075602d97
+
+
+-------------------------------------------Class Part 2-------------------------------------------
+
+ab hum nhi agent interact kr rha hai LLM say
+
+baqi article 3 cheezon pr mabni hai
+
+https://www.youtube.com/live/oiruESWxYyc?si=NMVVQdYuLIPbjfqe&t=610     (Is may pura markdown hai)

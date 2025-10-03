@@ -1,0 +1,54 @@
+markaz ai agent hai
+
+fan while loop
+
+agent ka workflow bna ke dedia kay aap download kro aur chalao
+
+numbers say searching easy hojati hai 1240 12th page (instead 15000 page story) (embedding)
+
+semantic vs embedding (https://projector.tensorflow.org/) 
+
+Diffusion model  (Ye 3no embedding)    (text based models)
+GAN model  (text based models)   (Isky paas 2 model aik data generate 2sra usko validate) (ya 1k train aur 2sra validate)
+Transformer model  (In 3no ki madad se data de kr training krwani hai) (hum test krky model ko shi galat bta rhy hain)  (text based models)  (self attention) (self attention mtlb 1 sath sary kaam)
+
+Sirf data hona kafi nhi training bhi
+
+model ki emotional intelligence bnani hai
+
+car search laya
+
+shopping, corporate meeting, evening (words kay between relation smjhna)
+
+44 00 - 44 14 & 51 06 - 51 30  (LLM kay pas intelligence nhi hai wo self attention aur embedding se relevant cheezain la rha hai)
+embedding kay liye tokeization zroori hai
+
+Hum inference krty hain
+
+llm function calling for taking action (tool calling) wo nhi krskta hume krne ka kehta hai (tool calling mtlb function ka naam aur parameter btana) 
+
+
+```
+User Input -> LLM -> Ouput
+if else -> User
+def flightbooking(location):
+```
+Is pury mechanism ko bna kr dedia framework may ab aap use kro yani 
+
+if else decision making
+
+My name is abbas asad what is my name correct  ans (OpenAI ka kamaal hai LLM ka nhi)
+
+LLM Tokens ki bhi aik limit hai (isiliye hum puri conversation nhi bly us ki some lines ki summary bhejte hain) (long term memory)  (ye summary bhi developer ki bnai hui hay)
+
+llm stateless hai us kay paas koi jga nhi hai data rkhnay ki
+
+func ka return state deta hai
+
+LLM alag hai ChatGPT alag hain dono mila kr hume diye gye hain
+
+Guardrail aur LLM 1 sath chlty hain
+
+Credit Card: Pioneer or nayapay, sadapay
+
+Generics aur dataclasses openai sdk nay buhat zyada use kiye hain

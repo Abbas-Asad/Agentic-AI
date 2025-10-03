@@ -103,6 +103,8 @@ print("Result:", result.final_output)
 [LLM Usage Cheatsheet](https://github.com/Abbas-Asad/Agentic-AI/blob/main/cheatsheets/llm_usage_cheatsheet.gif)  
 [AI Agents Cheatsheet](https://media.datacamp.com/cms/ai-agents-cheat-sheet.pdf)  
 [MCP Cheatsheet](https://github.com/Abbas-Asad/Agentic-AI/blob/main/cheatsheets/mcp_cheatsheet.gif)  
+[Prompt Engineering Cheatsheet1](https://github.com/Abbas-Asad/Agentic-AI/blob/main/cheatsheets/prompt_engineering_cheatsheet1)  
+[Prompt Engineering Cheatsheet2](https://github.com/Abbas-Asad/Agentic-AI/blob/main/cheatsheets/prompt_engineering_cheatsheet2)  
 
 
 ### Add-ons 

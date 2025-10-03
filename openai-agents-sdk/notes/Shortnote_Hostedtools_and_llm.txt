@@ -1,0 +1,12 @@
+4 cheezain llm kay paas
+
+1 sys prompt
+2 user prompt
+3 tool schema
+4 tool call ka answer
+
+conversation may add krky dubara llm
+
+file search (complex rag system)  (jo rag system hum bnate thay)
+
+computer tool (computer operate) (scren ko operate krny ky liye)  playwright

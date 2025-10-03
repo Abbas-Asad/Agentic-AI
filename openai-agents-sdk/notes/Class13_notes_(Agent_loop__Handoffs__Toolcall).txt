@@ -1,0 +1,13 @@
+Agent global run level bas tareqa hain configuration ka apny hisaab say
+
+LLM may 4 cheezain jaati hain
+1) System Prompt
+2) User Prompt
+3) Tools ka schema (If tools) (Agar tool python kafunction ho to tool ka schema SDK khud likh deta hai)
+4) Tool ka answer
+(Jb 4 cheezain hain to handoff kesay hota hai. Handoff bhi tool calling hi hai backend par)
+enable_verbose_stdout_logging()  ( Ye chla kr terminal go through kro chro cheezain aur handoff sab prove hojayega )
+
+OpenAI may by default 2 cheezain jati hain
+1) End point of OpenAI responses api aur 
+2) OpenAI base url

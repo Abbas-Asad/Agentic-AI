@@ -1,0 +1,56 @@
+Agent loop baar bar jb tk aap ka final output na aaye
+
+third party llm kay liye 2 or cheezain
+
+-Uq update verbous
+runner gent loop chlata hai
+token partialy hatho hath hum dikhaye user ko run streamed
+
+vertex ai
+
+config weghra bhi hta di litellm nay chat completion ki aditional
+
+haiku chinese novel shayari
+
+3sri cheez tool ka schema leta hai
+line 14 over ride krtay hain openai say
+line 15
+
+agnet llop chalay beghr agent kuc nhi krega runner
+
+final output mtlb sary agents nay kaam kr ky khtm kr lia
+userprompt may list bhi skty hain
+
+agrnt lloop kyu khty hain          buhat saare kaam
+
+naaam ki prpoperty tracing may identify krne may use hogi
+
+loop ghaliban is liye kay kay bar baar LLM calls ja rhi hain tools handoff
+
+bydefault openai key agr hu nay paas nhi ki to wo error
+backend pr chat competions api hi chl rhi hai
+
+buhat high level      abstraction level
+
+sysytem user aur ooutput sab token
+sysytem user aur tool sab token  3 chezain llm
+
+agrent llop ki zimmedari tool hand wghera
+
+functio ka schema lllm 
+agent ny llm say 2 ar bat ki  ent loop
+
+saara game agent loop ka hi wohi decide krta hai sab
+
+handoff desc likhdein to ach hai
+
+result.lastagent,name
+
+handoff routing
+
+agent loop hifz hona chahiye aur uv recommended
+
+rerun the loop
+mcp tools connection
+
+sab design patterns hain buiness req ko fulfill krny kay liye

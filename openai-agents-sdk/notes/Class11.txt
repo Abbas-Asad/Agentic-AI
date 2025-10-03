@@ -1,0 +1,39 @@
+latency aana jana
+
+workflow may contro,l humary paas nhi hai
+47 kuch pr
+
+agent aur agentic may noun aur adjective ka farq hai
+
+agency azaadi aur no predictibility 
+lekin hmesha agency achi nhi jaise chai bnana
+
+agar sab hard coded hai to workfow
+
+python ki class 
+actor ki class
+
+
+jjjjjjjjjjjj
+
+llm may teen cheezain teesri tool calling 3 ka baad final output deta hai
+
+open ai sdk may wohi answer kryga jis ko handsoff kr dia gia
+444
+guardrail input output ko validate kryga
+
+input oputput kay beech may joho wo sab agent loop hai
+
+
+
+pesay nhi to chatt completion lay kisi bhi llm ko connect
+
+asyncio jup notebook
+
+agent loop runner chalata hai
+
+company/model ka naam
+
+crew is multi agent system
+
+distributed computing vs centralized
