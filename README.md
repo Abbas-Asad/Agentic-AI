@@ -99,12 +99,12 @@ print("Result:", result.final_output)
 ### Tech Stack
 [AI Agents Tech Stack](https://www.linkedin.com/posts/rakeshgohel01_ai-agents-are-about-90-software-engineering-activity-7353405600610881536-D36M?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE4LvzIBUre-SsOdMUHO2iov_O9bjpaz5eE) 
 
-### Cheatsheet
+### Cheatsheets
 [LLM Usage Cheatsheet](https://github.com/Abbas-Asad/Agentic-AI/blob/main/cheatsheets/llm_usage_cheatsheet.gif)  
 [AI Agents Cheatsheet](https://media.datacamp.com/cms/ai-agents-cheat-sheet.pdf)  
 [MCP Cheatsheet](https://github.com/Abbas-Asad/Agentic-AI/blob/main/cheatsheets/mcp_cheatsheet.gif)  
-[Prompt Engineering Cheatsheet1](https://github.com/Abbas-Asad/Agentic-AI/blob/main/cheatsheets/prompt_engineering_cheatsheet1)  
-[Prompt Engineering Cheatsheet2](https://github.com/Abbas-Asad/Agentic-AI/blob/main/cheatsheets/prompt_engineering_cheatsheet2)  
+[Prompt Engineering Cheatsheet1](https://github.com/Abbas-Asad/Agentic-AI/blob/main/cheatsheets/prompt_engineering_cheatsheet1.pdf)  
+[Prompt Engineering Cheatsheet2](https://github.com/Abbas-Asad/Agentic-AI/blob/main/cheatsheets/prompt_engineering_cheatsheet2.pdf)  
 
 
 ### Add-ons 
